@@ -79,20 +79,38 @@ body{
     border: 0;
     border-radius: 8px;
 }
-.storage .barra-carregamento{
+.storage #barra-carregamento{
     background-color:hsl(229, 57%, 11%);
     width: 90%;
     height: 20px;
     border-radius: 10px;
     margin-top: 15px;
+
+    position: relative;    
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
-.storage span{
-    background-color: hsl(6, 100%, 80%); /* to hsl(335, 100%, 65%);*/
+.storage #usado{
+    position: absolute;
+    /* background-color: hsl(6, 100%, 80%); to hsl(335, 100%, 65%);*/
+    background: linear-gradient(to right, hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    width: 1%;
+    height: 15px;
+
+    border-radius: 10px;
+    margin-left: 3px;
     
-    width: 50%;
-    height: 20px;
 }
+
+#label {
+    text-align: right;
+    color: white;
+    font-size: 11px;
+    padding: 2.9px;
+}
+
 .storage .medida{
     width: 90%;
     display: flex;

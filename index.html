@@ -19,6 +19,7 @@
  
   <link rel="stylesheet" href="/CSS/style.css">
 
+  <script src="https://kit.fontawesome.com/a33ff96721.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -34,8 +35,10 @@
       </div>
       <div class="storage">
           <p>You’ve used <strong>815</strong> GB of your storage</p>
-          <div class="barra-carregamento">
-              <span></span>
+          <div id="barra-carregamento">
+              <div id="usado">
+                  <div id="label"><i class="fas fa-circle"></i></div>
+              </div>
           </div>         
 
           <div class="medida">
@@ -53,5 +56,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Camila Matos Bittencourt</a>.
   </div>
+
+  <script src="/script/carregamento.js"></script>
 </body>
 </html>
