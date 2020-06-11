@@ -70,7 +70,7 @@ body{
     width: 300px; /*22em / 90% */
     height: 150px;
     margin-top: 15px;
-    color: white;
+    color: hsl(243, 100%, 93%);
 
     display: flex;
     justify-content: center;
@@ -78,25 +78,64 @@ body{
     flex-direction: column;
     border: 0;
     border-radius: 8px;
+    
 }
-.storage .barra-carregamento{
+.storage #barra-carregamento{
     background-color:hsl(229, 57%, 11%);
     width: 90%;
     height: 20px;
     border-radius: 10px;
     margin-top: 15px;
+
+    position: relative;    
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
-.storage span{
-    background-color: hsl(6, 100%, 80%); /* to hsl(335, 100%, 65%);*/
+.storage #usado{
+    position: absolute;
+    /* background-color: hsl(6, 100%, 80%); to hsl(335, 100%, 65%);*/
+    background: linear-gradient(to right, hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    width: 1%;
+    height: 15px;
+
+    border-radius: 10px;
+    margin-left: 3px;
     
-    width: 50%;
-    height: 20px;
 }
+
+#label {
+    text-align: right;
+    color: white;
+    font-size: 11px;
+    padding: 2.9px;
+}
+
 .storage .medida{
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+}
+
+.resta {
+    background: white;
+    width: 130px;
+    height: 55px;
+    border-radius: 8px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+    position: absolute;
+    margin-top: 181px;
+}
+
+.resta span{
+    height: 35px;
+}
+.resta span strong{
+    font-size: 30px;
 }
