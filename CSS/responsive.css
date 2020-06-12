@@ -1,23 +1,31 @@
 @media (min-width: 400px){
     body{
-        background: url("/images/bg-mobile.svg") no-repeat;
-        background-size: 100vh;
         background-position-y: top;
         
+    }
+
+    .attribution{
+        font-size: 12px;
+
     }
     
 }
 
-@media(min-height: 650px){
+@media (min-width: 650px){
     body{
-        background-size: 100vh;
-        background-position-y: top;
+        background-position: center;
+        
+    }
+
+    .attribution{
+        font-size: 16px;
 
     }
-   
 }
 
-@media (min-width: 1020px){
+
+
+@media (min-width: 1110px){
     body{
         
         background: url("/images/bg-desktop.svg") hsl(229, 57%, 11%) no-repeat;
@@ -26,12 +34,8 @@
     }
 
     .elementos{
-        flex-direction: row;
-        width: 900px;
-    }
-
-    .filo{        
-        height: 185px;        
+        margin-top: 78px;
+        grid-template-columns: 300px auto;
     }
 
     .storage{
@@ -42,20 +46,11 @@
        
         align-items: flex-start; 
         padding-left: 30px;
-    }
+    }   
 
-    
-
-    .resta {
-        width: 145px;
-        height: 55px;
-        
-        border-radius: 8px;
-        top: -104px;
-        left: 242px;
-
-        position: relative;
-        
+    .resta {             
+        top: -13em;
+        left: 44em;
     }
 
     .resta::after{
@@ -70,7 +65,7 @@
         border-top: 30px solid #fff;
 
         bottom: -22px;
-        left: 86%;
+        left: 125px;
     }
     
 }
