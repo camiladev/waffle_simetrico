@@ -20,6 +20,13 @@ body{
     height: 100vh;
 }
 
+.elementos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .filo{
     background-color: hsl(228, 56%, 26%);
     width: 300px; /*22em / 90% */
@@ -68,7 +75,7 @@ body{
 .storage{
     background-color: hsl(228, 56%, 26%);
     width: 300px; /*22em / 90% */
-    height: 150px;
+    height: calc(150px-55px);
     margin-top: 15px;
     color: hsl(243, 100%, 93%);
 
@@ -79,6 +86,16 @@ body{
     border: 0;
     border-radius: 8px;
     
+}
+
+.content-storage{
+    width: 100%;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .storage #barra-carregamento{
     background-color:hsl(229, 57%, 11%);
@@ -122,15 +139,17 @@ body{
 
 .resta {
     background: white;
-    width: 130px;
+    width: 145px;
     height: 55px;
     border-radius: 8px; 
     display: flex;
     justify-content: center; 
     align-items: center; 
 
-    position: absolute;
-    margin-top: 181px;
+    position: relative;
+    top: -26px;
+    right: 10px;
+    
 }
 
 .resta span{
